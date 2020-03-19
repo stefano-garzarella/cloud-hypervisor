@@ -201,6 +201,7 @@ dependencies = [
  "vhost_user_block",
  "vhost_user_fs",
  "vhost_user_net",
+ "vhost_user_vsock",
  "virtio-bindings",
  "vm-device",
  "vm-memory",
@@ -1452,6 +1453,23 @@ dependencies = [
  "libc",
  "log 0.4.8",
  "net_util",
+ "vhost",
+ "vhost_user_backend",
+ "virtio-bindings",
+ "vm-memory",
+ "vm-virtio",
+ "vmm",
+ "vmm-sys-util",
+]
+
+[[package]]
+name = "vhost_user_vsock"
+version = "0.1.0"
+dependencies = [
+ "bitflags 1.2.1",
+ "epoll",
+ "libc",
+ "log 0.4.8",
  "vhost",
  "vhost_user_backend",
  "virtio-bindings",

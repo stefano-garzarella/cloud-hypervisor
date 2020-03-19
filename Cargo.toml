@@ -21,6 +21,7 @@ vhost_user_block = { path = "vhost_user_block"}
 vhost_user_fs = { path = "vhost_user_fs"}
 vhost_user_net = { path = "vhost_user_net"}
 virtio-bindings = { version = "0.1", features = ["virtio-v5_0_0"]}
+vhost_user_vsock = { path = "vhost_user_vsock"}
 vmm = { path = "vmm" }
 vm-device = { path = "vm-device" }
 vm-memory = "0.2.1"
@@ -66,6 +67,7 @@ members = [
     "vhost_user_backend",
     "vhost_user_fs",
     "vhost_user_net",
+    "vhost_user_vsock",
     "net_util",
     "acpi_tables",
     "arch_gen",
